@@ -1,0 +1,261 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+/* Navigation bar  */
+
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#logo{
+    margin: 10px 20px;
+
+
+}
+#logo img{
+    margin: 10px 20px;
+    width: 163px;
+    height: 115px;
+}
+
+#navbar ul{
+    display: flex;
+  
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+  
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 100px;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url(./bacgrnd\ 3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 108%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* Services Section */
+
+#services{
+    margin: 14px;
+}
+
+#services .boxes {
+    display:flex;
+    margin-top: 20px;
+}
+
+#services .box{
+    /* flex-direction:column; */
+    border: 2px solid rgb(224, 30, 30);
+    border-radius: 28px;
+    margin: 4px 17px;
+    padding: 35px;
+    /* width: 400px; */
+    background-color: rgb(200 194 194 / 22%);
+}
+#services .box img{
+    height: 160px;
+    display:block;
+    margin: auto;
+}
+services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+    /* display: flex; */
+}
+.clients{
+    display: flex;
+
+    /* padding: 40px; */
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    display: flex;
+    height: 165px;
+    width: 207px;
+}
+.client-items{
+    padding: 18px;
+}
+#clients-section::before{
+    content: "";
+    background: url('./bacgrnd\ 2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 55.2%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.67;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('./contactbacgrd.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.70;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: lighter;
+
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    display: flex;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(182, 70, 104);
+    color: white;
+    margin: 36px 20px;
+    border-radius: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    transition-property:all;
+    transition-duration: 1s;
+    transition-timing-function:ease-out;
+    transition-delay: 0.1s;
+}
+.btn:hover{
+    display: flex;
+    cursor: pointer;
+    transform: scale(1.5);
+    color: rgb(12, 9, 10);
+    
+}
+img{
+    display: flex;
+    transition: all 1s ease-out 0.1s;
+}
+img:hover{
+    display: flex;
+    cursor: pointer;
+    transform: scale(1.5);
+    color: rgb(12, 9, 10);
+    
+}
+.center{
+    text-align: center;
+}
+
+
+
